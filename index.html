@@ -1,728 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunt Big KS | Premium Hunting Equipment Serving Northeast Kansas</title>
 
-<title>Hunt Big KS | Premium Hunting Equipment</title>
+    <meta name="description" content="Hunt Big KS is your Northeast Kansas dealer for premium hunting blinds, towers, feeders, and hunting equipment.">
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#0b0b0b;
-    color:#f5f5f5;
-}
-
-
-/* HEADER */
-
-header{
-    position:absolute;
-    top:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    z-index:10;
-}
-
-.logo{
-    width:260px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#b89a62;
-}
-
-
-/* HERO */
-
-.hero{
-
-    height:100vh;
-
-    background:
-    linear-gradient(
-    rgba(0,0,0,.65),
-    rgba(0,0,0,.65)
-    ),
-    url("hero.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    padding:20px;
-
-}
-
-
-.hero-content{
-
-    max-width:800px;
-
-}
-
-
-.hero h1{
-
-    font-size:70px;
-    letter-spacing:2px;
-    margin-bottom:20px;
-
-}
-
-
-.hero span{
-
-    color:#b89a62;
-
-}
-
-
-.hero p{
-
-    font-size:24px;
-    color:#ddd;
-    margin-bottom:40px;
-
-}
-
-
-.button{
-
-    display:inline-block;
-
-    padding:15px 35px;
-
-    margin:10px;
-
-    background:#b89a62;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    border-radius:4px;
-
-    transition:.3s;
-
-}
-
-
-.button:hover{
-
-    background:#8d7345;
-
-}
-
-
-.secondary{
-
-    background:transparent;
-
-    border:2px solid #b89a62;
-
-}
-
-
-
-/* SECTIONS */
-
-
-.section{
-
-    padding:90px 8%;
-
-}
-
-
-.section-title{
-
-    text-align:center;
-
-    font-size:40px;
-
-    margin-bottom:50px;
-
-}
-
-
-/* PRODUCTS */
-
-
-.products{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-
-}
-
-
-.card{
-
-    background:#151515;
-
-    padding:35px;
-
-    text-align:center;
-
-    border-radius:8px;
-
-    border:1px solid #333;
-
-    transition:.3s;
-
-}
-
-
-.card:hover{
-
-    transform:translateY(-5px);
-
-    border-color:#b89a62;
-
-}
-
-
-.card h3{
-
-    color:#b89a62;
-
-    margin-bottom:15px;
-
-    font-size:25px;
-
-}
-
-
-.price{
-
-    font-size:22px;
-
-    margin:15px 0;
-
-    font-weight:bold;
-
-}
-
-
-
-/* FEATURED */
-
-
-.featured{
-
-    background:#111;
-
-}
-
-
-
-.featured p{
-
-    color:#ccc;
-
-    line-height:1.6;
-
-}
-
-
-
-/* WHY */
-
-
-.why{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-
-}
-
-
-.why div{
-
-    text-align:center;
-
-    padding:25px;
-
-}
-
-
-.why h3{
-
-    color:#b89a62;
-
-    margin-bottom:15px;
-
-}
-
-
-
-/* CONTACT */
-
-
-.contact{
-
-    text-align:center;
-
-}
-
-
-.contact a{
-
-    color:#b89a62;
-
-    text-decoration:none;
-
-}
-
-
-/* FOOTER */
-
-
-footer{
-
-    background:#000;
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#777;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-.hero h1{
-
-    font-size:42px;
-
-}
-
-.hero p{
-
-    font-size:18px;
-
-}
-
-nav{
-
-    display:none;
-
-}
-
-}
-
-
-</style>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
-
 <header>
 
-<img src="logo.png" class="logo">
+<div class="nav-container">
 
+    <a href="index.html">
+        <img src="logo.png" alt="Hunt Big KS Logo" class="logo">
+    </a>
 
-<nav>
+    <nav>
 
-<a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 
-<a href="products.html">Products</a>
+        <a href="products.html">Products</a>
 
-<a href="about.html">About</a>
+        <a href="blinds.html">Blinds</a>
 
-<a href="contact.html">Contact</a>
+        <a href="towers.html">Towers</a>
 
-</nav>
+        <a href="contact.html">Contact</a>
 
+    </nav>
+
+</div>
 
 </header>
 
 
-
-
 <section class="hero">
-
 
 <div class="hero-content">
 
-
-<h1>
-HUNT <span>BIG.</span><br>
-HUNT <span>SMART.</span>
-</h1>
-
+<h1>HUNT BIG.<br>HUNT SMART.</h1>
 
 <p>
-Premium Hunting Equipment
-serving Northeast Kansas.
+
+Premium Hunting Equipment<br>
+Serving Northeast Kansas
+
 </p>
 
+<a class="button" href="blinds.html">SHOP BLINDS</a>
 
-<a class="button" href="products.html">
-VIEW PRODUCTS
-</a>
-
-
-<a class="button secondary" href="#contact">
-REQUEST A QUOTE
-</a>
-
-
+<a class="button secondary" href="towers.html">VIEW TOWERS</a>
 
 </div>
 
-
 </section>
-
-
 
 
 
 <section class="section">
 
+<h2 class="section-title">Featured Products</h2>
 
-<h2 class="section-title">
-Featured Categories
-</h2>
-
-
-<div class="products">
-
+<div class="grid">
 
 <div class="card">
 
-<h3>Hunting Blinds</h3>
+<img src="images/products/buck-palace.jpg" alt="Buck Palace Blind">
+
+<div class="card-content">
+
+<h3>Buck Palace 6x6</h3>
 
 <p>
-Hard cover and soft side Redneck blinds built for serious hunters.
-</p>
-
-<div class="price">
-Starting at $2,300
-</div>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>Feeders</h3>
-
-<p>
-Reliable feeding solutions and accessories for wildlife management.
-</p>
-
-<div class="price">
-Starting at $109.99
-</div>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>Towers & Stands</h3>
-
-<p>
-Elevated hunting systems designed for comfort and visibility.
-</p>
-
-<div class="price">
-Starting at $924.99
-</div>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>Accessories</h3>
-
-<p>
-Blind covers, mounts, extensions, and hunting equipment upgrades.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="section featured">
-
-
-<h2 class="section-title">
-Featured Products
-</h2>
-
-
-<div class="products">
-
-
-<a href="game-changer.html" style="text-decoration:none;color:white;">
-
-<div class="card">
-
-<h3>
-Game Changer 6x8
-</h3>
-
-<p>
-Premium 360-degree hunting blind designed for maximum comfort.
-</p>
-
-<div class="price">
-Starting at $5,000
-</div>
-
-</div>
-
-</a>
-
-
-
-
-
-<div class="card">
-
-<h3>
-Buck Palace 6x6
-</h3>
-
-<p>
-A proven hunting blind setup for serious whitetail hunters.
+Our most popular hard-sided hunting blind with premium comfort and 360° visibility.
 </p>
 
 <div class="price">
 Starting at $3,800
 </div>
 
+<a class="button" href="blinds.html">
+View Details
+</a>
 
 </div>
 
-
+</div>
 
 
 
 <div class="card">
 
-<h3>
-Solo Hunter 4x4
-</h3>
+<img src="images/products/game-changer.jpg" alt="Game Changer Blind">
+
+<div class="card-content">
+
+<h3>Game Changer 6x8</h3>
 
 <p>
-Compact and comfortable for individual hunting setups.
+Built for serious hunters wanting maximum room and comfort.
 </p>
 
 <div class="price">
-Starting at $2,300
+Starting at $5,000
 </div>
 
+<a class="button" href="blinds.html">
+View Details
+</a>
 
 </div>
 
-
+</div>
 
 
 
 <div class="card">
 
-<h3>
-750 lb Gravity Feeder
-</h3>
+<img src="images/products/predator.jpg" alt="Predator Blind">
+
+<div class="card-content">
+
+<h3>Predator 5x6</h3>
 
 <p>
-Heavy-duty feeding solution with optional accessories.
+Premium Platinum 360 blind with excellent visibility and durability.
 </p>
 
 <div class="price">
-Starting at $899.99
+Starting at $3,500
+</div>
+
+<a class="button" href="blinds.html">
+View Details
+</a>
+
+</div>
+
 </div>
 
 
+
+<div class="card">
+
+<img src="images/products/tower.jpg" alt="Tower Stand">
+
+<div class="card-content">
+
+<h3>Tower Systems</h3>
+
+<p>
+Powder-coated stands and stair systems built to support your hunting blind.
+</p>
+
+<div class="price">
+Starting at $925
 </div>
 
-
+<a class="button" href="towers.html">
+View Towers
+</a>
 
 </div>
 
+</div>
+
+</div>
 
 </section>
-
-
-
-
 
 
 
 <section class="section">
 
-
 <h2 class="section-title">
+
 Why Hunt Big KS?
+
 </h2>
 
+<div class="grid">
 
-<div class="why">
+<div class="card">
 
+<div class="card-content">
 
-<div>
-
-<h3>
-Premium Equipment
-</h3>
+<h3>Authorized Dealer</h3>
 
 <p>
-Quality Redneck products built for serious outdoor use.
+
+Premium Redneck hunting products backed by trusted service.
+
 </p>
 
 </div>
 
+</div>
 
 
-<div>
 
-<h3>
-Kansas Focused
-</h3>
+<div class="card">
+
+<div class="card-content">
+
+<h3>Serving Northeast Kansas</h3>
 
 <p>
-Serving Northeast Kansas hunters with local knowledge.
+
+Local knowledge and personal customer support.
+
 </p>
 
 </div>
 
+</div>
 
 
-<div>
 
-<h3>
-Personal Service
-</h3>
+<div class="card">
+
+<div class="card-content">
+
+<h3>Competitive Pricing</h3>
 
 <p>
-Helping customers select the right equipment and setup.
+
+Straightforward pricing with personalized recommendations.
+
 </p>
 
 </div>
 
+</div>
+
+
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Personal Service</h3>
+
+<p>
+
+Questions? Call or email us directly. We're here to help.
+
+</p>
 
 </div>
 
+</div>
+
+</div>
 
 </section>
 
 
 
-
-
-
-
-
-<section class="section contact" id="contact">
-
+<section class="section">
 
 <h2 class="section-title">
-Contact Hunt Big KS
+
+Browse Products
+
 </h2>
 
+<div class="grid">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Hard-Sided Blinds</h3>
 
 <p>
-Ready to upgrade your hunting setup?
+
+Browse our complete lineup of Platinum and Camo hard-sided hunting blinds.
+
 </p>
 
+<a class="button" href="blinds.html">
+
+Browse
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Towers & Stands</h3>
+
+<p>
+
+Heavy-duty powder-coated stands and tower systems.
+
+</p>
+
+<a class="button" href="towers.html">
+
+Browse
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Feeders</h3>
+
+<p>
+
+Coming Soon
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Soft-Sided Blinds</h3>
+
+<p>
+
+Coming Soon
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2 class="section-title">
+
+Ready to Upgrade Your Hunting Setup?
+
+</h2>
+
+<div style="text-align:center;">
+
+<p style="font-size:22px;">
+
+Questions? We'd be happy to help.
+
+</p>
 
 <br>
 
+<h2>
 
-<p>
 📞 785-477-2902
-</p>
 
+</h2>
 
-<p>
-✉️ 
-<a href="mailto:jasewege04@gmail.com">
-jasewege04@gmail.com
+<br>
+
+<h2>
+
+✉️ jasewege04@gmail.com
+
+</h2>
+
+<br>
+
+<a class="button" href="contact.html">
+
+Contact Us
+
 </a>
-</p>
 
+</div>
 
 </section>
-
-
 
 
 
 <footer>
 
-© 2026 Hunt Big KS | Premium Hunting Equipment
+<div class="footer-container">
+
+<div>
+
+<h3>
+
+Hunt Big KS
+
+</h3>
+
+<p>
+
+Premium Hunting Equipment
+
+Serving Northeast Kansas
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<a href="index.html">Home</a>
+
+<a href="products.html">Products</a>
+
+<a href="blinds.html">Blinds</a>
+
+<a href="towers.html">Towers</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div>
+
+<h3>
+
+Contact
+
+</h3>
+
+<p>
+
+785-477-2902
+
+</p>
+
+<p>
+
+jasewege04@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 Hunt Big KS. All Rights Reserved.
+
+</div>
 
 </footer>
 
-
-
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
