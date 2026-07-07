@@ -11,113 +11,100 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#0b0b0b;
-    color:#f5f5f5;
+background:#0b0b0b;
+color:white;
 }
 
 
-/* HEADER */
-
 header{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:20px 8%;
-
-    background:#0b0b0b;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0b0b0b;
 
 }
 
 
 .logo{
 
-    width:160px;
+width:160px;
 
 }
 
 
 nav a{
 
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
 
 }
 
 
 nav a:hover{
 
-    color:#b89a62;
+color:#b89a62;
 
 }
 
 
 
-/* HERO */
-
 .hero{
 
-    text-align:center;
-    padding:80px 20px;
-
-    background:#111;
+text-align:center;
+padding:90px 20px;
+background:#111;
 
 }
 
 
 .hero h1{
 
-    font-size:55px;
-    margin-bottom:20px;
+font-size:55px;
+margin-bottom:20px;
 
 }
 
 
 .hero span{
 
-    color:#b89a62;
+color:#b89a62;
 
 }
 
 
 .hero p{
 
-    font-size:22px;
-    color:#ccc;
+font-size:22px;
+color:#ccc;
 
 }
 
 
 
-/* PRODUCTS */
+.container{
 
-
-.section{
-
-    padding:80px 8%;
+padding:70px 8%;
 
 }
 
 
 
-.product-grid{
+.grid{
 
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
-
-    gap:35px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
 
 }
 
@@ -125,25 +112,12 @@ nav a:hover{
 
 .card{
 
-    background:#151515;
-
-    border:1px solid #333;
-
-    border-radius:8px;
-
-    overflow:hidden;
-
-    transition:.3s;
-
-}
-
-
-
-.card:hover{
-
-    transform:translateY(-5px);
-
-    border-color:#b89a62;
+background:#161616;
+border:1px solid #333;
+border-radius:10px;
+overflow:hidden;
+padding-bottom:30px;
+text-align:center;
 
 }
 
@@ -151,19 +125,9 @@ nav a:hover{
 
 .card img{
 
-    width:100%;
-
-    height:250px;
-
-    object-fit:cover;
-
-}
-
-
-
-.card-content{
-
-    padding:30px;
+width:100%;
+height:230px;
+object-fit:cover;
 
 }
 
@@ -171,31 +135,17 @@ nav a:hover{
 
 .card h2{
 
-    color:#b89a62;
-
-    margin-bottom:15px;
+color:#b89a62;
+margin:25px 0 10px;
 
 }
-
 
 
 .card p{
 
-    color:#ccc;
-
-    line-height:1.5;
-
-}
-
-
-
-.price{
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    margin:20px 0;
+padding:0 25px;
+color:#ccc;
+line-height:1.5;
 
 }
 
@@ -203,86 +153,58 @@ nav a:hover{
 
 .button{
 
-    display:inline-block;
-
-    background:#b89a62;
-
-    color:white;
-
-    padding:12px 25px;
-
-    text-decoration:none;
-
-    border-radius:4px;
-
-    font-weight:bold;
+display:inline-block;
+margin-top:25px;
+background:#b89a62;
+padding:12px 30px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
 
 }
-
 
 
 .button:hover{
 
-    background:#8d7345;
+background:#8d7345;
 
 }
 
 
+.coming{
 
-/* FOOTER */
+color:#b89a62;
+font-weight:bold;
+margin-top:20px;
+
+}
+
 
 
 footer{
 
-    background:#000;
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#777;
+background:#000;
+text-align:center;
+padding:35px;
+color:#777;
 
 }
 
-
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-nav{
-
-display:none;
-
-}
-
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-
-}
 
 
 </style>
 
-
 </head>
 
 
-
 <body>
-
 
 
 <header>
 
 
 <img src="logo.png" class="logo">
-
 
 
 <nav>
@@ -303,13 +225,12 @@ font-size:40px;
 
 
 
-
 <section class="hero">
 
 
 <h1>
 
-PRODUCT <span>CATEGORIES</span>
+HUNT BIG <span>PRODUCTS</span>
 
 </h1>
 
@@ -328,45 +249,33 @@ for Northeast Kansas hunters.
 
 
 
+<section class="container">
 
 
-<section class="section">
-
-
-<div class="product-grid">
-
+<div class="grid">
 
 
 
+<!-- BLINDS -->
 
 <div class="card">
 
 
-<img src="blinds.jpg" alt="Hunting Blinds">
-
-
-<div class="card-content">
+<img src="images/categories/blinds.jpg">
 
 
 <h2>
-Hunting Blinds
+Hard-Sided Hunting Blinds
 </h2>
 
 
 <p>
 
-Hard cover and soft side Redneck blinds
-built for comfort, concealment, and
-all-day hunts.
+Premium Redneck enclosed blinds built
+for comfort, concealment, and serious
+Kansas hunters.
 
 </p>
-
-
-<div class="price">
-
-Starting at $599
-
-</div>
 
 
 <a class="button" href="blinds.html">
@@ -379,92 +288,28 @@ VIEW BLINDS
 </div>
 
 
-</div>
 
 
 
-
-
-
-
-
+<!-- TOWERS -->
 
 <div class="card">
 
 
-<img src="feeders.jpg" alt="Feeders">
-
-
-<div class="card-content">
+<img src="images/categories/towers.jpg">
 
 
 <h2>
-Feeders
+Blind Towers & Stands
 </h2>
 
 
 <p>
 
-Reliable wildlife management solutions
-and feeder accessories.
+Complete your blind setup with elevated
+stands, platforms, and tower systems.
 
 </p>
-
-
-<div class="price">
-
-Starting at $109.99
-
-</div>
-
-
-<a class="button" href="feeders.html">
-
-VIEW FEEDERS
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="towers.jpg" alt="Blind Towers">
-
-
-<div class="card-content">
-
-
-<h2>
-Towers & Stands
-</h2>
-
-
-<p>
-
-Elevated hunting systems designed
-for comfort and visibility.
-
-</p>
-
-
-<div class="price">
-
-Starting at $924.99
-
-</div>
 
 
 <a class="button" href="towers.html">
@@ -477,44 +322,36 @@ VIEW TOWERS
 </div>
 
 
-</div>
 
 
 
 
 
-
-
+<!-- FEEDERS -->
 
 
 <div class="card">
 
 
-<img src="accessories.jpg" alt="Accessories">
-
-
-<div class="card-content">
+<img src="images/categories/feeders.jpg">
 
 
 <h2>
-Accessories
+Feeders
 </h2>
 
 
 <p>
 
-Complete your hunting setup with
-mounts, covers, extensions, and more.
+Redneck wildlife management products
+and feeder accessories.
 
 </p>
 
 
-<a class="button" href="accessories.html">
+<div class="coming">
 
-VIEW ACCESSORIES
-
-</a>
-
+COMING SOON
 
 </div>
 
@@ -523,6 +360,105 @@ VIEW ACCESSORIES
 
 
 
+
+
+
+
+<!-- SOFT BLINDS -->
+
+
+<div class="card">
+
+
+<h2>
+Soft-Sided Blinds
+</h2>
+
+
+<p>
+
+Additional mobile hunting solutions
+coming soon.
+
+</p>
+
+
+<div class="coming">
+
+COMING SOON
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- TRUCK -->
+
+
+<div class="card">
+
+
+<h2>
+Truck Bed Covers
+</h2>
+
+
+<p>
+
+Premium truck accessories designed
+for hunters and outdoorsmen.
+
+</p>
+
+
+<div class="coming">
+
+COMING SOON
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ACCESSORIES -->
+
+
+<div class="card">
+
+
+<h2>
+Blind Covers & Accessories
+</h2>
+
+
+<p>
+
+Protect and customize your hunting
+setup.
+
+</p>
+
+
+<div class="coming">
+
+COMING SOON
+
+</div>
+
+
+</div>
 
 
 
@@ -535,8 +471,6 @@ VIEW ACCESSORIES
 
 
 
-
-
 <footer>
 
 © 2026 Hunt Big KS | Premium Redneck Hunting Equipment
@@ -544,9 +478,6 @@ VIEW ACCESSORIES
 </footer>
 
 
-
-
 </body>
-
 
 </html>
