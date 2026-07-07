@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | Hunt Big KS</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:#f5f5f5;
+}
+
+
+/* HEADER */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#0b0b0b;
+
+}
+
+
+.logo{
+
+    width:160px;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+    color:#b89a62;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+    text-align:center;
+    padding:80px 20px;
+
+    background:#111;
+
+}
+
+
+.hero h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+
+.hero span{
+
+    color:#b89a62;
+
+}
+
+
+.hero p{
+
+    font-size:22px;
+    color:#ccc;
+
+}
+
+
+
+/* PRODUCTS */
+
+
+.section{
+
+    padding:80px 8%;
+
+}
+
+
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+
+
+.card{
+
+    background:#151515;
+
+    border:1px solid #333;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#b89a62;
+
+}
+
+
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+
+
+.card-content{
+
+    padding:30px;
+
+}
+
+
+
+.card h2{
+
+    color:#b89a62;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+    color:#ccc;
+
+    line-height:1.5;
+
+}
+
+
+
+.price{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin:20px 0;
+
+}
+
+
+
+.button{
+
+    display:inline-block;
+
+    background:#b89a62;
+
+    color:white;
+
+    padding:12px 25px;
+
+    text-decoration:none;
+
+    border-radius:4px;
+
+    font-weight:bold;
+
+}
+
+
+
+.button:hover{
+
+    background:#8d7345;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#000;
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#777;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+nav{
+
+display:none;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<img src="logo.png" class="logo">
+
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="products.html">Products</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<h1>
+
+PRODUCT <span>CATEGORIES</span>
+
+</h1>
+
+
+<p>
+
+Premium Redneck hunting equipment
+for Northeast Kansas hunters.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="product-grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="blinds.jpg" alt="Hunting Blinds">
+
+
+<div class="card-content">
+
+
+<h2>
+Hunting Blinds
+</h2>
+
+
+<p>
+
+Hard cover and soft side Redneck blinds
+built for comfort, concealment, and
+all-day hunts.
+
+</p>
+
+
+<div class="price">
+
+Starting at $599
+
+</div>
+
+
+<a class="button" href="blinds.html">
+
+VIEW BLINDS
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="feeders.jpg" alt="Feeders">
+
+
+<div class="card-content">
+
+
+<h2>
+Feeders
+</h2>
+
+
+<p>
+
+Reliable wildlife management solutions
+and feeder accessories.
+
+</p>
+
+
+<div class="price">
+
+Starting at $109.99
+
+</div>
+
+
+<a class="button" href="feeders.html">
+
+VIEW FEEDERS
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="towers.jpg" alt="Blind Towers">
+
+
+<div class="card-content">
+
+
+<h2>
+Towers & Stands
+</h2>
+
+
+<p>
+
+Elevated hunting systems designed
+for comfort and visibility.
+
+</p>
+
+
+<div class="price">
+
+Starting at $924.99
+
+</div>
+
+
+<a class="button" href="towers.html">
+
+VIEW TOWERS
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="accessories.jpg" alt="Accessories">
+
+
+<div class="card-content">
+
+
+<h2>
+Accessories
+</h2>
+
+
+<p>
+
+Complete your hunting setup with
+mounts, covers, extensions, and more.
+
+</p>
+
+
+<a class="button" href="accessories.html">
+
+VIEW ACCESSORIES
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+© 2026 Hunt Big KS | Premium Redneck Hunting Equipment
+
+</footer>
+
+
+
+
+</body>
+
+
+</html>
