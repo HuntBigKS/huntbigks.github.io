@@ -43,16 +43,18 @@ header{
 }
 
 .nav-container{
-    max-width:var(--max-width);
+    max-width:1300px;
     margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 30px;
+    padding:14px 30px;
 }
 
 .logo{
-    width:170px;
+    width:165px;
+    height:auto;
+    transition:.3s ease;
 }
 
 nav{
@@ -74,13 +76,15 @@ nav a:hover{
 /* ---------- HERO ---------- */
 
 .hero{
-    min-height:85vh;
+    min-height:92vh;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:40px;
-    background:#111;
+    padding:40px 20px;
+    background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        #111;
 }
 
 .hero-content{
