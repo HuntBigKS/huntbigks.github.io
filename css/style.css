@@ -367,6 +367,9 @@ footer li{
 footer a:hover{
     color:#9ed19e;
 }
+footer p{
+    margin-bottom:10px;
+}
 
 /* MOBILE */
 
