@@ -62,20 +62,22 @@ a{
 
 /* HEADER */
 
+/* HEADER */
+
 .site-header{
     position:sticky;
     top:0;
     z-index:999;
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(12px);
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    background:rgba(20,20,20,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .nav-container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    min-height:80px;
+    min-height:95px;
 }
 
 .logo{
@@ -84,7 +86,7 @@ a{
 }
 
 .logo img{
-    height:100px;
+    height:75px;
     width:auto;
     display:block;
 }
@@ -92,17 +94,37 @@ a{
 .nav-links{
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:35px;
 }
 
 .nav-links a{
-    font-weight:600;
-    transition:var(--transition);
+    color:white;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    transition:.3s ease;
+    position:relative;
 }
 
 .nav-links a:hover,
 .nav-links .active{
-    color:var(--green);
+    color:#b89a62;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    bottom:-8px;
+    left:0;
+    width:0;
+    height:2px;
+    background:#b89a62;
+    transition:.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after{
+    width:100%;
 }
 
 /* HERO */
