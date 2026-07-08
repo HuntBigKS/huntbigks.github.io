@@ -71,13 +71,14 @@ a{
     background:rgba(20,20,20,.95);
     backdrop-filter:blur(10px);
     border-bottom:1px solid rgba(255,255,255,.1);
+    padding:10px 0;
 }
 
 .nav-container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    min-height:95px;
+    min-height:135px;
 }
 
 .logo{
