@@ -86,9 +86,21 @@ a{
 }
 
 .logo img{
-    height:150px;
+    height:75px;
     width:auto;
     display:block;
+}
+
+
+.brand-images{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.dealer-badge{
+    height:55px;
+    width:auto;
 }
 
 .nav-links{
