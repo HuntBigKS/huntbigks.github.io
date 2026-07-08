@@ -86,7 +86,7 @@ a{
 }
 
 .logo img{
-    height:75px;
+    height:125px;
     width:auto;
     display:block;
 }
@@ -95,11 +95,12 @@ a{
 .brand-images{
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:40px;
+   opacity:.95;
 }
 
 .dealer-badge{
-    height:55px;
+    height:75px;
     width:auto;
 }
 
